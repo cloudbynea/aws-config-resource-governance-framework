@@ -1,7 +1,10 @@
 # AWS Config Resource Governance Framework
 Status: Production-ready governance baseline model
+
 Scope: Single-account AWS Config implementation
+
 Evaluation Mode: Continuous
+
 Control Type: Detective (with manual remediation)
 
 Enterprise-style AWS Config governance framework enforcing S3 KMS encryption, EC2 mandatory tags, and S3 versioning with continuous compliance validation.
