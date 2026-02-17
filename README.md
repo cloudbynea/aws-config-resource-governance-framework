@@ -1,4 +1,8 @@
 # AWS Config Resource Governance Framework
+Status: Production-ready governance baseline model
+Scope: Single-account AWS Config implementation
+Evaluation Mode: Continuous
+Control Type: Detective (with manual remediation)
 
 Enterprise-style AWS Config governance framework enforcing S3 KMS encryption, EC2 mandatory tags, and S3 versioning with continuous compliance validation.
 
@@ -156,3 +160,11 @@ Details:
 This repository demonstrates a structured governance baseline implemented using AWS Config managed rules and validated through a full compliance lifecycle.
 
 Rather than deploying infrastructure, this project enforces standards that strengthen security posture, improve operational discipline, and support enterprise compliance maturity.
+
+## Governance Control Summary
+
+| Control | Objective | Risk Domain |
+|----------|-----------|------------|
+| S3 Default Encryption | Enforce encryption at rest | Confidentiality |
+| EC2 Required Tags | Enforce accountability metadata | Operational Governance |
+| S3 Versioning | Protect against data loss | Resilience |
