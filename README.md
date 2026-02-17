@@ -27,6 +27,12 @@ This project demonstrates the implementation of a structured governance baseline
 
 The framework models a continuous compliance lifecycle including detection, remediation, and validation.
 
+## Governance Domains Covered
+
+- Confidentiality (KMS Encryption Enforcement)
+- Operational Accountability (Tag Enforcement)
+- Resilience (S3 Versioning)
+- Continuous Drift Detection (AWS Config)
 ---
 
 ## Architecture
@@ -43,6 +49,10 @@ Core Components:
 The design enforces confidentiality, operational accountability, and resilience across monitored resources.
 
 See `/architecture/` for diagrams.
+
+## Architecture Diagram
+
+![Governance Architecture](architecture/governance-architecture-diagram.png)
 
 ---
 
@@ -114,6 +124,15 @@ Screenshots documenting:
 - Compliant validation after re-evaluation
 
 See `/evidence/`.
+
+### Sample Compliance Evidence
+
+![S3 Encryption Noncompliant](evidence/01-s3-encryption-noncompliant.png)
+![S3 Encryption Compliant](evidence/02-s3-encryption-compliant.png)
+![EC2 Required Tags Noncompliant](evidence/03-ec2-required-tags-noncompliant.png)
+![EC2 Required Tags Compliant](evidence/04-ec2-required-tags-compliant.png)
+![S3 Versioning Noncompliant](evidence/05-s3-versioning-noncompliant.png)
+![S3 Versioning Compliant](evidence/06-s3-versioning-compliant.png)
 
 ---
 
